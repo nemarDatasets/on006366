@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Mouse Sleep Staging Validation dataset (MSSV)",
+  "description": "The Mouse Sleep Staging Validation dataset (MSSV) comprises EEG and EMG recordings from 92 healthy mice collected across five international laboratories. The dataset includes expert-annotated sleep scores and is designed to support validation of automated sleep staging algorithms in rodent models. Recordings were acquired during both dark and light phases and standardized to 128 Hz sampling rate with 4-second epoch lengths.",
+  "methods_description": "EEG and EMG recordings were collected from 92 healthy mice across five laboratories. All recordings were downsampled to 128 Hz with SI units (volts) and segmented into 4-second epochs. Each mouse was scored by a single sleep expert. Recordings include at least one EEG and one EMG channel, with EEG channel numbers varying by laboratory.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -96,52 +98,6 @@
       ]
     }
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds006366.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on006366",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataset/on006366",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1093/sleepadvances/zpaf025",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "Lundbeck Foundation",
-      "award_number": "R344-2020-749"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".edf",
-    ".json",
-    ".md",
-    ".py",
-    ".pyc",
-    ".tsv"
-  ],
-  "description": "The Mouse Sleep Staging Validation dataset (MSSV) comprises EEG and EMG recordings from 92 healthy mice collected across five international laboratories. The dataset includes expert-annotated sleep stage scores and represents a multi-center resource for validating automated sleep staging algorithms in rodent models. All recordings have been standardized to 128 Hz sampling rate and formatted according to BIDS specifications.",
-  "methods_description": "EEG and EMG recordings were collected from 92 healthy mice across five laboratories during both dark and light phases. All recordings were downsampled to 128 Hz with SI units (volts) and segmented into 4-second epochs. Each mouse was scored by a single sleep expert. The dataset includes variable numbers of EEG channels depending on the laboratory.",
   "keywords": [
     {
       "term": "EEG"
@@ -159,8 +115,53 @@
       "term": "polysomnography"
     },
     {
-      "term": "multi-center study"
+      "term": "automated sleep classification"
     }
   ],
-  "source_hash": "43cf334f96c8f997796a86e5aae508ae0322d04077e94199e4abd44a53311d66"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on006366",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006366",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1093/sleepadvances/zpaf025",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006366.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Lundbeck Foundation",
+      "award_number": "R344-2020-749"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "6.5 GB (153 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".py",
+    ".pyc",
+    ".tsv",
+    ".yml"
+  ],
+  "source_hash": "913fd5a3111d4069cc924449d4495588713baa2db6d8555a9eb3b3eb0704084d"
 }
