@@ -1,15 +1,36 @@
 {
   "version": "2.0",
-  "dataset_id": "on006366",
-  "source": "openneuro",
-  "source_id": "ds006366",
+  "pipeline_stage": "validated",
   "title": "Mouse Sleep Staging Validation dataset (MSSV)",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Laura Rose": {},
-    "Alexander Neergaard Zahid": {},
+    "Alexander Neergaard Zahid": {
+      "orcid": "0000-0001-6881-9766",
+      "affiliations": [
+        {
+          "name": "Department of Applied Mathematics and Computer Science, Technical University of Denmark , Kgs. Lyngby ,"
+        }
+      ]
+    },
     "Javier García Ciudad": {},
-    "Christine Egebjerg": {},
-    "Louise Piilgaard": {},
+    "Christine Egebjerg": {
+      "orcid": "0009-0006-2035-6145",
+      "affiliations": [
+        {
+          "name": "Department of Neuroscience, Faculty of Health and Medical Sciences, University of Copenhagen , Copenhagen ,"
+        }
+      ]
+    },
+    "Louise Piilgaard": {
+      "orcid": "0000-0003-4585-5996",
+      "affiliations": [
+        {
+          "name": "Department of Neuroscience, Faculty of Health and Medical Sciences, University of Copenhagen , Copenhagen ,"
+        }
+      ]
+    },
     "Frederikke Lynge Sørensen": {},
     "Mie Andersen": {},
     "Tessa Radovanovic": {},
@@ -18,36 +39,128 @@
     "Sébastien Arthaud": {},
     "Renato Maciel": {},
     "Christelle Peyron": {},
-    "Chiara Berteotti": {},
+    "Chiara Berteotti": {
+      "orcid": "0000-0002-4143-9445",
+      "affiliations": [
+        {
+          "name": "Department of Biomedical and Neuromotor Sciences, University of Bologna , Bologna ,"
+        }
+      ]
+    },
     "Viviana Lo Martire": {},
-    "Alessandro Silvani": {},
-    "Giovanna Zoccoli": {},
-    "Micaela Borsa": {},
-    "Antoine Adamantidis": {},
+    "Alessandro Silvani": {
+      "orcid": "0000-0003-3992-3892",
+      "affiliations": [
+        {
+          "name": "Department of Biomedical and Neuromotor Sciences, University of Bologna , Bologna ,"
+        }
+      ]
+    },
+    "Giovanna Zoccoli": {
+      "orcid": "0000-0002-9670-9959",
+      "affiliations": [
+        {
+          "name": "Department of Biomedical and Neuromotor Sciences, University of Bologna , Bologna ,"
+        }
+      ]
+    },
+    "Micaela Borsa": {
+      "orcid": "0000-0001-7634-7738",
+      "affiliations": [
+        {
+          "name": "Zentrum für Experimentelle Neurologie, Department of Neurology, University Hospital Bern , Bern ,"
+        },
+        {
+          "name": "Department of Biomedical Research, University of Bern , Bern ,"
+        }
+      ]
+    },
+    "Antoine Adamantidis": {
+      "orcid": "0000-0003-2531-5175",
+      "affiliations": [
+        {
+          "name": "Zentrum für Experimentelle Neurologie, Department of Neurology, University Hospital Bern , Bern ,"
+        },
+        {
+          "name": "Department of Biomedical Research, University of Bern , Bern ,"
+        }
+      ]
+    },
     "Morten Mørup": {},
-    "Birgitte Rahbek Kornum": {}
+    "Birgitte Rahbek Kornum": {
+      "orcid": "0000-0002-2515-9451",
+      "affiliations": [
+        {
+          "name": "Department of Neuroscience, Faculty of Health and Medical Sciences, University of Copenhagen , Copenhagen ,"
+        }
+      ]
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds006366.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on006366",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on006366",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1093/sleepadvances/zpaf025",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.10.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "Lundbeck Foundation (R344-2020-749)"
+      "funder_name": "Lundbeck Foundation",
+      "award_number": "R344-2020-749"
     }
   ],
-  "acknowledgements": "Acknowledgements: Thank you to all participating labs for sharing their data."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".py",
+    ".pyc",
+    ".tsv"
+  ],
+  "description": "The Mouse Sleep Staging Validation dataset (MSSV) comprises EEG and EMG recordings from 92 healthy mice collected across five international laboratories. The dataset includes expert-annotated sleep stage scores and represents a multi-center resource for validating automated sleep staging algorithms in rodent models. All recordings have been standardized to 128 Hz sampling rate and formatted according to BIDS specifications.",
+  "methods_description": "EEG and EMG recordings were collected from 92 healthy mice across five laboratories during both dark and light phases. All recordings were downsampled to 128 Hz with SI units (volts) and segmented into 4-second epochs. Each mouse was scored by a single sleep expert. The dataset includes variable numbers of EEG channels depending on the laboratory.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "sleep staging"
+    },
+    {
+      "term": "mice"
+    },
+    {
+      "term": "EMG"
+    },
+    {
+      "term": "polysomnography"
+    },
+    {
+      "term": "multi-center study"
+    }
+  ],
+  "source_hash": "43cf334f96c8f997796a86e5aae508ae0322d04077e94199e4abd44a53311d66"
 }
