@@ -1,0 +1,53 @@
+{
+  "version": "2.0",
+  "dataset_id": "on006366",
+  "source": "openneuro",
+  "source_id": "ds006366",
+  "title": "Mouse Sleep Staging Validation dataset (MSSV)",
+  "authors": {
+    "Laura Rose": {},
+    "Alexander Neergaard Zahid": {},
+    "Javier García Ciudad": {},
+    "Christine Egebjerg": {},
+    "Louise Piilgaard": {},
+    "Frederikke Lynge Sørensen": {},
+    "Mie Andersen": {},
+    "Tessa Radovanovic": {},
+    "Anastasia Tsopanidou": {},
+    "Maiken Nedergaard": {},
+    "Sébastien Arthaud": {},
+    "Renato Maciel": {},
+    "Christelle Peyron": {},
+    "Chiara Berteotti": {},
+    "Viviana Lo Martire": {},
+    "Alessandro Silvani": {},
+    "Giovanna Zoccoli": {},
+    "Micaela Borsa": {},
+    "Antoine Adamantidis": {},
+    "Morten Mørup": {},
+    "Birgitte Rahbek Kornum": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds006366.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.10.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Lundbeck Foundation (R344-2020-749)"
+    }
+  ],
+  "acknowledgements": "Acknowledgements: Thank you to all participating labs for sharing their data."
+}
