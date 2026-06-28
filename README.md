@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on006366-blue)](https://doi.org/10.82901/nemar.on006366)
+
 # Mouse Sleep Staging Validation dataset (MSSV)
 
 This dataset contains EEG recordings with sleep scores from 92 healthy mice. The recordings and sleep scores were collected from five different labs:
