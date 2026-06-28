@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Mouse Sleep Staging Validation dataset (MSSV)",
-  "description": "The Mouse Sleep Staging Validation dataset (MSSV) comprises EEG and EMG recordings from 92 healthy mice collected across five international laboratories. The dataset includes expert-annotated sleep scores and is designed to support validation of automated sleep staging algorithms in rodent models. Recordings were acquired during both dark and light phases and standardized to 128 Hz sampling rate with 4-second epoch lengths.",
-  "methods_description": "EEG and EMG recordings were collected from 92 healthy mice across five laboratories. All recordings were downsampled to 128 Hz with SI units (volts) and segmented into 4-second epochs. Each mouse was scored by a single sleep expert. Recordings include at least one EEG and one EMG channel, with EEG channel numbers varying by laboratory.",
+  "description": "The Mouse Sleep Staging Validation dataset (MSSV) comprises EEG and EMG recordings from 92 healthy mice collected across five international laboratories. The dataset includes expert-scored sleep stages and is designed to support validation of automated sleep staging algorithms in rodent models. All recordings have been standardized to 128 Hz sampling rate with 4-second epochs and formatted according to BIDS specifications.",
+  "methods_description": "EEG and EMG recordings were collected from 92 healthy mice across five laboratories during both dark and light phases. All recordings were downsampled to 128 Hz with SI units (volts) and segmented into 4-second epochs. Each mouse was scored by a single sleep expert. The number of EEG channels varied between laboratories.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
