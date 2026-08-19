@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Mouse Sleep Staging Validation dataset (MSSV)",
-  "description": "The Mouse Sleep Staging Validation dataset (MSSV) comprises EEG and EMG recordings from 92 healthy mice collected across five international laboratories. The dataset includes expert-scored sleep stages and is designed to support validation of automated sleep staging algorithms in rodent models. All recordings have been standardized to 128 Hz sampling rate with 4-second epochs and formatted according to BIDS specifications.",
-  "methods_description": "EEG and EMG recordings were collected from 92 healthy mice across five laboratories during both dark and light phases. All recordings were downsampled to 128 Hz with SI units (volts) and segmented into 4-second epochs. Each mouse was scored by a single sleep expert. The number of EEG channels varied between laboratories.",
+  "description": "This dataset comprises EEG and EMG recordings with expert-annotated sleep scores from 92 healthy mice, collected across five research laboratories in Italy, Denmark, Switzerland, and France. Recordings span both dark and light phases and were standardized to 128Hz sampling with SI units, aiming to validate automated mouse sleep staging methods. The dataset is formatted in BIDS and stored in EDF format.",
+  "methods_description": "Recordings were collected from 92 healthy mice across five labs, each scored by a single sleep expert. All recordings contain at least one EEG and one EMG channel, with the number of EEG channels varying by lab. Data were downsampled to 128Hz with SI units (volts), using an epoch length of 4 seconds.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -103,19 +103,23 @@
       "term": "EEG"
     },
     {
-      "term": "sleep staging"
-    },
-    {
-      "term": "mice"
-    },
-    {
       "term": "EMG"
     },
     {
-      "term": "polysomnography"
+      "term": "Sleep Stages",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012894"
     },
     {
-      "term": "automated sleep classification"
+      "term": "Mice"
+    },
+    {
+      "term": "Polysomnography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017286"
+    },
+    {
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
@@ -132,7 +136,7 @@
     {
       "identifier": "10.1093/sleepadvances/zpaf025",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.18112/openneuro.ds006366.v1.0.1",
